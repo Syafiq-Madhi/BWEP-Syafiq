@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BWEP-AS3</title>
+	<style type="text/css">
+		
+		body {
+			background-color: #c1d2d8;
+			display: grid;
+			grid-gap: 0px;
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(2, 1fr);
+			grid-template-areas: 
+			"header"
+			"first"
+			"second"
+			"third"
+			"fourth";
+			}
+
+			header{
+			background-image: linear-gradient(to right, white, lightblue);
+			font-size: 3em;
+			height: 40px;
+			width: 100%;
+			text-align: center;
+			padding: 20px;
+			margin: 0;
+			}
+
+			nav{
+			background-color: lightblue;
+			position: sticky;
+			top:0px;
+			height: 50px;
+			padding-top: 0px;
+			margin-top: 0px;
+			}
+
+			li{
+			display: inline-block;
+			height: 10px;
+			width: 35vh;
+			margin: 10px;
+			}
+			
+			a:hover	{
+				text-shadow: 2px 2px 4px #000000;
+			}
+
+			main{
+				background-color: #f0edea;
+				text-align: center;
+			}
+
+			.text{
+				font-size: 2em; 
+			}
+			
+			img{
+				height: 60vh;
+				width: 100vh;
+			}
+
+			footer{
+			background-color: lightblue;
+			clear: both;
+			height: 20px;
+			text-align: center;
+			position: sticky;
+			bottom:0px;
+			}
+
+	</style>
+</head>
+<body>
+
+	<header id="top" style="grid-area: header">WEBSITE NAME</header>
+
+	<nav>
+		<ul>
+			<li><a href="corporate.html">Corporate cards</a></li>
+			<li><a href="formal.html">Formal cards</a></li>
+			<li><a href="informal.html">Informal cards</a></li>
+			<li><a href="customs.html">custom cards</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<div class="text" style="grid-area: first"><a href="pre-design.html">Use our pre-designed card samples: </a></div>
+		<div style="grid-area: second"><a href="pre-design.html"><img src="sample.png"></a></div>
+		<div class="text" style="grid-area: third"><a href="customs.html">Creat your own custom invite card: </a></div>
+		<div style="grid-area: fourth"><a href="customs.html"><img src="custom.png"></a></div>
+	</main>
+
+	<a href="#top">to top</a>
+
+	<footer>
+		@bwep2021
+	</footer>
+
+</body>
+</html>
